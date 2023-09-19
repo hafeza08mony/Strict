@@ -1,0 +1,361 @@
+/* 
+    Theme: Strict
+    Author: 
+    Live URL: 
+
+    Primary Color: #15a4fa
+    Secondery Color: #2d3950
+
+    Font Style: 
+        font-family: 'Lato', sans-serif;
+    Title: #2d3950
+    Paragraph: #909090
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+h2, h3, h4, h5,h6{
+    color: #2d3950;
+}
+p{
+    color: #999999;
+}
+/* Header Section Start */
+    /* Navbar */
+.navbar-section{
+    padding: 10px;
+    background: #f6f9f9;
+}
+.navbar-section .navbar ul li{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 45px;
+}
+.navbar .nav-item .nav-link{
+    transition: all .4s ease-in-out;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #15a4fa;
+}
+
+    /* Banner */
+.banner-section{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner-content h1{
+    color: #fff;
+    font-size: 110px;
+    font-weight: 600;
+}
+.banner-content span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+    margin: 5px 0 30px;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-content button{
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #15a4fa;
+    padding: 12px 30px;
+    font-weight: 400;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all .4s ease-in-out;
+}
+.banner-content button:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+.banner-icon{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 22px;
+    animation: down 1s linear infinite alternate;
+}
+@keyframes down{
+    0%{
+        top: 85%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+/* Header Section End */
+
+/* Design Section Start */
+.design-section{
+    background: #f6f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+.design-section .heading h2{
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.design-section .heading p{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Design Section End */
+
+/* Feature Section Start */
+.feature-section{
+    padding: 60px 0;
+    text-align: center;
+}
+.feature-item .icon-box{
+    height: 65px;
+    width: 65px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+0,48baff+50,5fc3ff+50,48baff+100 */
+    background: linear-gradient(to right,  #5fc3ff 0%,#48baff 50%,#5fc3ff 50%,#48baff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.feature-item h2{
+    font-size: 26px;
+}
+.feature-item p{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Feature Section End */
+
+
+/* Gallery Section Start */
+.gallery-section{
+    background: #f6f9f9;
+    padding: 60px 0;
+}
+.gallery-section .heading{
+    text-align: center;
+}
+.gallery-section h2{
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.gallery-section p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item-gallery .item{
+    margin-bottom: 25px;
+}
+.item-gallery .item img{
+    width: 100%;
+    height: auto;
+}
+
+.item::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #2aabf7;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    transition: all .5s ease-in-out;
+}
+.item:hover::before{
+    width: 100%;
+}
+.item{
+    position: relative;
+}
+.item ul{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    list-style: none;
+    display: flex;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.item ul li{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+}
+.item ul li a{
+    color: #fff;
+}
+
+.item:hover ul{
+    opacity: 1;
+    top: 50%;
+}
+/* Gallery Section End */
+
+/* Contact Section Start */
+.contact-section{
+    position: relative;
+    background: url(../images/footer.jpg) center no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    z-index: 0;
+}
+.contact-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: #2d384c;
+    z-index: -1;
+}
+.contact-section h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact-section p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.input-content{
+    display: block;
+    background: transparent;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    width: 100%;
+    border: 2px solid #999999;
+    border-radius: 4px;
+    text-transform: capitalize;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+.input-content::placeholder{
+    color: #999999;
+    font-size: 18px;
+}
+.message-content{
+    display: block;
+    background: transparent;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    width: 100%;
+    border: 2px solid #999999;
+    border-radius: 4px;
+    text-transform: capitalize;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+}
+.message-content::placeholder{
+    color: #999999;
+    font-size: 18px;
+}
+.form-check{
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
+    position: relative;
+    right: -1%;
+}
+.form-check-input{
+    position: absolute;
+    top: 0;
+    left: 22px;
+ }
+ .btn-send{
+    display: inline;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid #15a4fa;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    float: right;
+    transition: all .4s ease-in-out;
+}
+.btn-send:hover{
+    background: #15a4fa;
+}
+/* Contact Section End */
+
+/* Footer Section Start */
+.footer-section{
+    background: #f6f9f9;
+    padding: 25px 0;
+}
+.footer-section p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.footer-section ul{
+    text-align: right;
+    margin: 0;
+}
+.footer-section ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 5px;
+}
+.footer-section ul li a .fa{
+
+}
+.footer-section ul li .fa-brands{
+    height: 35px;
+    width: 35px;
+    background: #15a4fa;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+}
+/* Footer Section End */
+
